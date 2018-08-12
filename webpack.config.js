@@ -20,6 +20,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "html", "index.html"),
       filename: path.resolve(__dirname, "dist", "index.html")
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src", "html", "users", "index.html"),
+      filename: path.resolve(__dirname, "dist", "users", "index.html")
     })
   ],
   module: {
