@@ -10,5 +10,18 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
     port: 4000
+  },
+  module: {
+    rules: [
+      {
+        test: /.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ["env"]
+          }
+        }
+      }
+    ]
   }
 }
