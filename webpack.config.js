@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"),
@@ -11,6 +12,11 @@ module.exports = {
     contentBase: path.resolve(__dirname, "dist"),
     port: 4000
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
+  ],
   module: {
     rules: [
       {
@@ -21,6 +27,15 @@ module.exports = {
             presets: ["env"]
           }
         }
+      },
+      {
+        test: /\.s?css$/,
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
+        ]
       }
     ]
   }
