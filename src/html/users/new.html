@@ -16,31 +16,21 @@
           <!-- 主內容區 -->
           <div class='card'>
             <div class='card-body'>
-              <div class='row'>
-                <div class='col-9'>
-                  <h2 class='card-title'>使用者管理</h2>
+              <form id="newUserForm">
+                <div class="form-group">
+                  <label>姓名</label>
+                  <input type="text" name="name" class="form-control" />
                 </div>
-                <div class='col-3'>
-                  <a href='/users/new.html' class="btn btn-primary float-right">新增</a>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="email" class="form-control" />
                 </div>
-              </div>
-
-              <div class='table-responsive'>
-                <table class="table table-bordered table-striped">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">名字</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">生日</th>
-                      <th scope="col">功能</th>
-                    </tr>
-                  </thead>
-                  <tbody id="usersRow">
-
-                  </tbody>
-                </table>
-              </div>
+                <div class="form-group">
+                  <label>生日</label>
+                  <input type="text" name="birthday" class="form-control" />
+                </div>
+                <button id='createUserBtn' type="submit" class="btn btn-primary">建立</button>
+              </form>
             </div>
           </div>
         </div>
