@@ -31,6 +31,11 @@ module.exports = {
       template: path.resolve(__dirname, "src", "html", "users", "new.html"),
       filename: path.resolve(__dirname, "dist", "users", "new.html"),
       title: "新增使用者"
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src", "html", "users", "edit.html"),
+      filename: path.resolve(__dirname, "dist", "users", "edit.html"),
+      title: "編輯使用者"
     })
   ],
   module: {

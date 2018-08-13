@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <%= require("../partials/header.ejs")({title: htmlWebpackPlugin.options.title}) %>
+  <body>
+    <%= require("../partials/navbar.ejs")() %>
+    <section class='container-fluid'>
+      <div class='row'>
+        <!-- 側欄 -->
+        <div class='col-lg-3 col-sm-12'>
+          <%= require("../partials/aside.ejs")({active: "users"}) %>
+        </div>
+        <!-- 主內容 -->
+        <div class='col-lg-9 col-sm-12'>
+          <!-- 麪包屑導覽列-->
+          <%= require("../partials/breadcrumb.ejs")({title: htmlWebpackPlugin.options.title}) %>
+          <!-- 主內容區 -->
+          <div class='card'>
+            <div class='card-body'>
+              <form id="editUserForm">
+                <div class="form-group">
+                  <label>姓名</label>
+                  <input type="text" name="name" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>生日</label>
+                  <input type="text" name="birthday" class="form-control" />
+                </div>
+                <button id='updateUserBtn' type="submit" class="btn btn-primary">更新</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%= require("../partials/scripts.ejs")() %>
+  </body>
+</html>

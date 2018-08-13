@@ -12,7 +12,7 @@ $(function(){
         <td>${user.email}</td>
         <td>${user.birthday}</td>
         <td>
-          <a href='#' class="btn btn-info">編輯</a>
+          <a href='/users/edit.html?user=${user.id}' class="btn btn-info">編輯</a>
           <a href='#' class="btn btn-danger">刪除</a>
         </td>
       </tr>
