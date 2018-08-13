@@ -25,16 +25,10 @@
       "email": "d@abc.com"
     },
     {
-      "name": "吳美美",
-      "email": "meimei@abc.com",
-      "birthday": "1990/08/08",
+      "name": "Mary Jane",
+      "email": "mary@abc.com",
+      "birthday": "1991/03/01",
       "id": 5
-    },
-    {
-      "name": "David",
-      "email": "david@abc.com",
-      "birthday": "1990/09/09",
-      "id": 6
     }
   ]
 }
