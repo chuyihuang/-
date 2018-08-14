@@ -1,34 +1,22 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John",
-      "birthday": "1992/01/01",
-      "email": "john@abc.com"
-    },
-    {
-      "id": 2,
-      "name": "林大華",
-      "birthday": "1990/02/01",
-      "email": "b@abc.com"
-    },
-    {
-      "id": 3,
-      "name": "王小美",
-      "birthday": "1990/03/01",
-      "email": "c@abc.com"
-    },
-    {
-      "id": 4,
-      "name": "蔡大正",
-      "birthday": "1990/04/01",
-      "email": "d@abc.com"
-    },
-    {
-      "name": "Mary Jane",
-      "email": "mary@abc.com",
-      "birthday": "1991/03/01",
+      "name": "Becca",
+      "email": "becca@abc.com",
+      "birthday": "2018/02/01",
       "id": 5
+    },
+    {
+      "name": "Peter",
+      "email": "peter@abc.com",
+      "birthday": "1990/05/01",
+      "id": 6
+    },
+    {
+      "name": "Alice",
+      "email": "alice@abc.com",
+      "birthday": "2018/08/01",
+      "id": 7
     }
   ]
 }

@@ -8,6 +8,9 @@ $(function() {
     }).done((data) => {
       // console.log(data);
       // 移除指定的使用者的tr
+      let message = "刪除成功！"
+      $("#alertContent").text(message);
+      $("#alertBlock").show();
       $(this).parents('tr').remove();
     })
   })
